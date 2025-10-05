@@ -4,10 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>async/await</title>
-    <script type="module" crossorigin src="/async_await/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
+    <script type="module" crossorigin src="/async_await/pagination.js"></script>
+    <link rel="modulepreload" crossorigin href="/async_await/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="modulepreload" crossorigin href="/async_await/assets/vendor-uumJaN6-.js">
+    <link rel="stylesheet" crossorigin href="/async_await/assets/vendor-DnveWo0P.css">
   </head>
+  <style>
+    p {
+      margin: 0;
+    }
+
+    .posts {
+      margin: 0;
+      margin-top: 24px;
+      list-style: none;
+    }
+
+    .posts li:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    .post-title {
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .post-title:first-letter {
+      text-transform: uppercase;
+    }
+  </style>
   <body>
     <h1>Пагінація</h1>
+
+    <button type="button" class="btn">Fetch posts</button>
+    <ul class="posts"></ul>
 
   </body>
 </html>
